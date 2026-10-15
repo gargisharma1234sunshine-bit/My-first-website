@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f5f8ff;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background: #123b70;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.hero {
+    min-height: 420px;
+    background: linear-gradient(135deg, #123b70, #2878b5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffd166;
+    color: #123b70;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #123b70;
+    margin-bottom: 20px;
+}
+
+.section > p {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.facilities {
+    background: #eaf2ff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #2367a5;
+    margin-bottom: 12px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.gallery-box {
+    background: #dceaff;
+    padding: 45px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #123b70;
+}
+
+.contact {
+    background: #eaf2ff;
+}
+
+.contact .btn {
+    margin-top: 20px;
+}
+
+footer {
+    background: #123b70;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 650px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .cards,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
